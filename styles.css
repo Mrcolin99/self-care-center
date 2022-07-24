@@ -8,7 +8,8 @@ black - #000000;
 */
 body {
   background-image: linear-gradient(to bottom, #134d71, #f7e4bf);
-  /* border: solid black 3px; */
+
+
 
 }
 
@@ -27,7 +28,7 @@ button {
   border-radius: 10px;
   border: groove grey 5px;
   height: 30px;
-  width: 170px
+  width: 170px;
 }
 
 
@@ -40,29 +41,29 @@ button {
   width: 500px;
   margin: auto;
   background-color: white;
-  border-radius: 20px
+  border-radius: 20px;
 }
 
 .not-a-real-fix {
-  margin: 400px
+  margin: 400px;
 }
 
 form {
   display: flex;
   justify-content: center;
   padding: 5px;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .affirmation-mantra {
-  border: solid black 2px;
+  border: solid black 3px;
   width: 300px;
   height: 100px;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5px;
+  padding: 3px;
   margin: auto;
   border-radius: 20px;
   font-family: 'Quicksand', sans-serif;
@@ -90,3 +91,24 @@ form {
   margin: auto;
   border-radius: 20px;
   font-family: 'Quicksand', sans-serif;
+  visibility: hidden;
+}
+
+.saved-shown {
+  border: solid black 2px;
+  width: 800px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: top right;
+  padding: 5px;
+  margin: auto;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.unhide-saved {
+  display: flex;
+  justify-content: center
+}
