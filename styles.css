@@ -6,3 +6,87 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+body {
+  background-image: linear-gradient(to bottom, #134d71, #f7e4bf);
+  /* border: solid black 3px; */
+
+}
+
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  justify-content: center;
+  display: flex;
+}
+
+
+button {
+  background-color: #134d71;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 10px;
+  border: groove grey 5px;
+  height: 30px;
+  width: 170px
+}
+
+
+.mantra-text {
+  border: solid black 2px;
+  display: flex;
+  font-family: 'Quicksand', sans-serif;
+  justify-content: center;
+  height: 100px;
+  width: 500px;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px
+}
+
+.not-a-real-fix {
+  margin: 400px
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  flex-wrap: wrap
+}
+
+.affirmation-mantra {
+  border: solid black 2px;
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  margin: auto;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.selector {
+  color: #C3D0D9;
+  border: 1px solid #C3D0D9;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.saved {
+  border: solid black 2px;
+  width: 800px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  margin: auto;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
