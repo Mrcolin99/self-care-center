@@ -11,6 +11,8 @@ var savedQuote = document.querySelector('.saved-text')
 var showSavedButton = document.querySelector('.unhide-saved')
 var savedBox = document.querySelector('.saved')
 
+var deleteButton = document.querySelector('.delete')
+
 var textSelected
 //ARRAY SECTION
 var mantras = [
@@ -39,7 +41,7 @@ affirmationButton.addEventListener('click', setTypeAffirmation)
 saveButton.addEventListener('click', saveQuote)
 showSavedButton.addEventListener('click', showSavedBox)
 showSavedButton.addEventListener('click', buttonChange)
-
+deleteButton.addEventListener('click', deleteQuote)
 //FUNCTIONS
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
@@ -66,6 +68,7 @@ function saveQuote() {
   saved.push(mantraText.innerText)
   savedQuote.innerText = `Favorited Quotes: ${saved}`
   event.preventDefault()
+  console.log(saved)
 }
 
 function showSavedBox() {
@@ -78,4 +81,10 @@ function buttonChange() {
   if (showSavedButton.innerText === 'Show Favorites') {
     showSavedButton.innerText = 'Hide Favorites'
   } else {showSavedButton.innerText = 'Show Favorites'}
+}
+
+function deleteQuote() {
+  saved.pop()
+  savedQuote.innerText = `Favorited Quotes: ${saved}`
+  console.log(saved)
 }
