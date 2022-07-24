@@ -68,7 +68,6 @@ function saveQuote() {
   saved.push(mantraText.innerText)
   savedQuote.innerText = `Favorited Quotes: ${saved}`
   event.preventDefault()
-  console.log(saved)
 }
 
 function showSavedBox() {
@@ -86,5 +85,4 @@ function buttonChange() {
 function deleteQuote() {
   saved.pop()
   savedQuote.innerText = `Favorited Quotes: ${saved}`
-  console.log(saved)
 }
